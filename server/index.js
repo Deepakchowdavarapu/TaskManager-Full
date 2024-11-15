@@ -9,7 +9,10 @@ const jwt = require('jsonwebtoken')
 const Task = require('./Models/TaskModel')
 
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin: 'https://task-manager-full-4h3i.vercel.app', // Replace with your actual frontend URL
+    // credentials: true, 
+  }))
 app.use(express.json())
 
 mongoose.connect(process.env.MONGODB_URI)
