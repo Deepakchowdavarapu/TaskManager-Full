@@ -1,0 +1,12 @@
+.create{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.create button{
+    width: 100%;
+}

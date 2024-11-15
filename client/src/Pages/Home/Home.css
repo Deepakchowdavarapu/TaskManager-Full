@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: "faculty glyphic";
+    justify-content: space-evenly;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input:hover{
+    cursor:pointer;
+}
+
+a{
+    color: grey;
+}
+
+a:hover{
+    color:#000000;
+}
+
+.nav button{
+    background-color: white;
+    color: #000000;
+    font-family: "faculty glyphic";
+    padding: 16px 24px;
+    border-radius: 2rem;
+}
+
+.task{
+    display: flex;
+    margin:30px;
+    margin-inline: 10%;
+    box-shadow: 10px 10px 50px #888888;
+    justify-content:space-between;
+    padding-inline:30px;
+    align-items:center ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-family: "faculty glyphic", sans-serif;
+}
+
+.task:hover{
+    transform: translateY(-10px);
+    /* transform: scale(1.01); */
+    transition: 0.1s ease-in;
+}
+
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.taskPlusIdx{
+    display: flex;
+    align-items: center;
+}
+
+.idx{
+    font-size: 30px;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.right{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.holder{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.heading{
+    font-size: 21px;
+    font-family: "Faculty Glyphic", sans-serif;
+    color: #888888;
+}
+
+.title{
+  font-size: 30px;
+}
+
+.des{
+    font-size: 20px;
+}
+
+.status{
+    font-size: 18px;
+    font-weight:600;
+    text-transform: uppercase;
+    /* color:grey; */
+}
+
+.priority{
+    font-size: larger;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* color:grey; */
+}
+
+.dueDate{
+    font-weight: 600;
+    color:darkolivegreen;
+}
+
+.matter{
+  font-family: "Quicksand", sans-serif;
+  /* color:grey; */
+}
+
+.save-btn{
+    padding:10px;
+    box-shadow: 10px 10px 30px grey;
+    margin:15px;
+}
+
+.create-btn{
+    width: fit-content;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    font-family: "faculty Glyphic", sans-serif;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-content button {
+    font-family: "quicksand",sans-serif;
+    margin: 10px;
+}
+
+.fa-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.fa-icon:hover{
+    cursor: pointer;
+}
+
+.create-icon{
+    font-size: 40px;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container select,
+.search-container input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.create-click{
+    display: flex;
+    align-items: center;
+}

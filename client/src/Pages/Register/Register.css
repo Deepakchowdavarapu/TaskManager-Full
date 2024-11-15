@@ -1,0 +1,31 @@
+body{
+    background-image: ;
+    background-size: cover;
+}
+
+.modal-register{
+    display: flex;
+    gap:10%;
+}
+
+a{
+    font-size: 25px;
+    font-family: "faculty Glyphic", sans-serif;
+}
+
+.empty{
+    position:fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+hr{
+    background-color: black;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 2px;
+}
