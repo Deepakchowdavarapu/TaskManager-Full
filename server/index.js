@@ -9,10 +9,7 @@ const jwt = require('jsonwebtoken')
 const Task = require('./Models/TaskModel')
 
 const app = express()
-app.use(cors({
-    origin: 'https://task-manager-full-4h3i.vercel.app', // Replace with your actual frontend URL
-    // credentials: true, 
-  }))
+app.use(cors())
 app.use(express.json())
 
 mongoose.connect(process.env.MONGODB_URI)
@@ -236,6 +233,8 @@ app.get('/users',async(req,res)=>{
     }
 })
 
-app.listen(process.env.PORT,()=>{ 
+const port = process.env.PORT || 5000
+
+app.listen(port,()=>{ 
     console.log(`server is running on port ${process.env.PORT}`)
 })
