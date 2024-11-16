@@ -35,7 +35,7 @@ export default function Create() {
 
     const handleCreate = (title, description, status, priority, dueDate) => {
         setShowModal(true)
-        axios.post("http://localhost:5000/tasks", { title, description, status, priority, dueDate })
+        axios.post("https://taskmanager-full-backend.onrender.com", { title, description, status, priority, dueDate })
             .then((res) => {
                 // console.log(res.data);
                 if(res.data._id){
