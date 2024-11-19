@@ -233,6 +233,10 @@ app.get('/users',async(req,res)=>{
     }
 })
 
+app.get('/health' , async(req,res)=>{
+    res.send("health")
+})
+
 // const port = process.env.PORT || 5000
 
 // app.listen(port,()=>{ 
