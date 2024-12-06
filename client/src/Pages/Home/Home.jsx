@@ -21,7 +21,7 @@ export default function Home() {
             navigate('/login');
         } else {
             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-            axios.get("https://taskmanager-full-backend.onrender.com/tasks")
+            axios.get("https://taskmanager-full.onrender.com/tasks")
                 .then((res) => {
                     setTasks(res.data.tasks);
                     if (res.data.user) {
@@ -45,7 +45,7 @@ export default function Home() {
     };
 
     const handleSaveClick = (taskId) => {
-        axios.put(`https://taskmanager-full-backend.onrender.com/tasks/${taskId}`, editTaskData)
+        axios.put(`https://taskmanager-full.onrender.com/tasks/${taskId}`, editTaskData)
             .then((res) => {
                 setTasks(tasks.map(task => task._id === taskId ? res.data : task));
                 setEditTaskId(null);
@@ -61,7 +61,7 @@ export default function Home() {
     };
 
     const handleDeleteConfirm = () => {
-        axios.delete(`https://taskmanager-full-backend.onrender.com/tasks/${taskToDelete._id}`)
+        axios.delete(`https://taskmanager-full.onrender.com/tasks/${taskToDelete._id}`)
             .then(() => {
                 setTasks(tasks.filter(task => task._id !== taskToDelete._id));
                 setShowModal(false);

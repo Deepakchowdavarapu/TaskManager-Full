@@ -15,7 +15,7 @@ export default function Login(){
 
     function handleLogin(email, password) {
         setShowModal(true);
-        axios.post("http://localhost:5000/auth/login", { email, password })
+        axios.post("https://taskmanager-full.onrender.com/auth/login", { email, password })
             .then((res) => {
                 if (res.data.status === "Success") {
                     localStorage.setItem('token', res.data.token);

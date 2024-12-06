@@ -14,7 +14,7 @@ export default function Register(){
     const [showModal,setShowModal] = React.useState(false)
 
     function handleRegister(name,email,password){
-        axios.post("https://taskmanager-full-backend.onrender.com/auth/register" , {name,email,password})
+        axios.post("https://taskmanager-full.onrender.com/auth/register" , {name,email,password})
         .then((res)=>{
             // console.log(res.data)
             if(res.data.id){

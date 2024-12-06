@@ -20,7 +20,7 @@ export default function Create() {
             navigate('/login');
         } else {
             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-            axios.get("https://taskmanager-full-backend.onrender.com/tasks")
+            axios.get("https://taskmanager-full.onrender.com/tasks")
                 .then((res) => {
                     setTasks(res.data.tasks);
                     if (res.data.user) {
@@ -35,7 +35,7 @@ export default function Create() {
 
     const handleCreate = (title, description, status, priority, dueDate) => {
         setShowModal(true)
-        axios.post("https://taskmanager-full-backend.onrender.com/tasks", { title, description, status, priority, dueDate })
+        axios.post("https://taskmanager-full.onrender.com/tasks", { title, description, status, priority, dueDate })
             .then((res) => {
                 // console.log(res.data);
                 if(res.data._id){
